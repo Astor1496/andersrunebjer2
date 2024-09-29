@@ -10,18 +10,30 @@
   <header>
     <a href="index.html" id="header-logo">Advokat Anders Runebjer AB</a>
     <ul>
-      <li><a href="pages/about.html">Om oss</a></li>
+      <li><a href="pages/about.html">Om</a></li>
       <li><a href="pages/services.html">Tjänster</a></li>
-      <li><a href="pages/contactus.html">Kontakta oss</a></li
+      <li><a href="pages/contactus.html">Kontakt</a></li
     </ul>
   </header>
 
   <div id="landing-page">
     <div id="landing__content">
       <h1 id="landing-header">Advokat Anders Runebjer AB</h1>
-      <p id="landing-text">Text att ändra</p>
+      <p id="landing-text">Välkommen till Advokat Anders Runebjer AB där du får den bästa klientservicen som finns på marknaden!</p>
       <a href="pages/contactus.html"><button id="landing__button">Kontakta oss</button></a>
     </div>
   </div>
+  <div id="landing-page">
+    <div id="landing__content">
+      <h1 id="landing-header">Advokat Anders Runebjer AB</h1>
+      <p id="landing-text">Välkommen till Advokat Anders Runebjer AB där du får den bästa klientservicen som finns på marknaden!</p>
+      <a href="pages/contactus.html"><button id="landing__button">Kontakta oss</button></a>
+    </div>
 </body>
+<script type="text/javascript">
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
 </html>
