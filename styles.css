@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+  --button-background: #000000;
+  --text-font: Poppins;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font);
+  background: #202920;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+}
+
+header #header-logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+}
+
+#landing-page {
+  background-image: url(images/landing-page.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left horizontally */
+  align-items: flex-start; /* Moves content higher up */
+  padding-left: 50px; /* Adds left padding */
+  padding-top: 200px; /* Adjusts the content higher up */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#landing__content {
+  text-align: left;
+}
+
+#landing-header, #landing-text {
+  color: white;
+}
+
+#landing-text {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 150px, 100%; 
+}
+
+#landing-header {
+  font-size: 50px;
+  line-height: 70px;
+  max-width: 500px;
+}
+
+#landing__button {
+  border-radius: 10px;
+  border: none;
+  background: var(--button-background);
+  transition: 0.1s;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+  width: 125px;
+  margin-top: 10px;
+}
+
+#landing__button:hover {
+  background: #bdbdbd;
+  color: #000000;
+}
