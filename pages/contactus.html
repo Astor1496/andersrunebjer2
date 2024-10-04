@@ -4,16 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakta Oss</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
   <header>
-    <a href="/index.html" id="header-logo">Advokat Anders Runebjer AB</a>
+    <a href="../index.html" id="header-logo">Advokat Anders Runebjer AB</a>
     <ul>
       <li><a href="about.html">Om</a></li>
       <li><a href="services.html">Tjänster</a></li>
       <li><a href="contactus.html">Kontakt</a></li>
     </ul>
   </header>
+
+  <div id="contact-us">
+    <div id="contact__head">
+      <h2 id="contact__header">Kontakta oss</h2>
+    </div>
+    
+   
+    <div id="contact-content">
+      <div id="left-column">
+        <div id="contact__image">
+          <img src="../images/advokatandersrunebjer.jpeg" alt="Office image">
+        </div>
+      </div>
+
+      
+        <div id="contact__text">
+          <p>Behöver du juridisk rådgivning eller söker du en erfaren advokat som kan vägleda dig genom en juridisk process? Vårt team på Advokat Anders Runebjer AB finns här för att hjälpa dig.
+            <br><br>
+            Oavsett om det handlar om affärsjuridik, familjerätt, brottmål eller något annat område inom juridiken, kan du lita på att vi erbjuder expertis och ett personligt engagemang i varje ärende.
+            <br><br>
+            Kontakta oss så återkommer vi så snart som möjligt för att diskutera hur vi bäst kan bistå dig.
+          </p>
+        </div>
+  
+
+      <div id="contact__info">
+        <div id="phone-number">Telefon: +46708661350</div>
+        <div id="address">Adress: Gårdserud 60, 686 91 Sunne
+          </div>
+        <div id="email">E-post: info@example.com</div>
+        <div id="linkto-maps"><a target="_blank" href="https://www.google.se/maps/place/G%C3%A5rdserud+60,+686+91+Sunne/@59.8016951,13.2565707,18.17z/data=!4m6!3m5!1s0x464325f24aef839d:0xc6ba9abb24cac45d!8m2!3d59.8017183!4d13.2597352!16s%2Fg%2F11vkfgbm5w?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">Google Maps</a></div>
+      </div>
+    </div>
+  </div>
 </body>
+<script type="text/javascript">
+  window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
 </html>
