@@ -4,6 +4,12 @@
 :root {
   --button-background: #000000;
   --text-font: Poppins;
+  --header-font :Times New Roman;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 p {
@@ -81,6 +87,14 @@ header ul li a {
   font-weight: 500;
   transition: 0.6s;
 }
+header ul li a:hover {
+  color: #f21818;
+  text-decoration: none;
+  letter-spacing: 0.2vw;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
 
 
 #landing-page {
@@ -95,6 +109,7 @@ header ul li a {
   background-size: cover;
   text-decoration: none;
   text-align: center;
+  font-family: var(--header-font);
 }
 
 #landing__content {
@@ -190,6 +205,7 @@ header ul li a {
   position: relative;
   top: 5vh;
   text-align: center;
+  font-family: var(--header-font);
 }
 
 #contact__text {
@@ -217,10 +233,14 @@ header ul li a {
 #linkto-maps{
   max-width: 7vw;
   font-size: 2vh;
-  text-decoration: inherit !important;
-  color: inherit !important;
+  transition: color 0.6s ease-in-out;
+  margin-top: 1vh;
+  color: aqua;
 }
 
+#linkto-maps:hover{
+  color: rgb(0, 42, 255);
+}
 
 #about-us{
   height: 100vh;
@@ -235,6 +255,7 @@ header ul li a {
   text-align: center;
   font-weight: 700;
   line-height: 7vh;
+  font-family: var(--header-font);
 }
 
 #about-us__text {
@@ -248,4 +269,86 @@ header ul li a {
   margin: auto;
   margin-top: 15vh;
   line-height: 3vh;
+}
+
+footer{
+  background-color: #111;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
 }
