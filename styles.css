@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gloock&display=swap');
 
 @keyframes appear {
   from {
@@ -16,7 +16,7 @@
 .fadein {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 30%;
 }
 
 /* Global Styles */
@@ -129,14 +129,15 @@
 
 :root {
   --button-background: #000000;
-  --text-font: Poppins;
-  --header-font: Poppins;
+  --text-font: 'DM sans';
+  --header-font: 'Gloock';
 }
 
 
 a {
   text-decoration: none;
   color: inherit;
+  font-family: var(--text-font);
 }
 
 p {
@@ -154,6 +155,7 @@ body {
   background: #131316;
   height: 100vh;
   overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 header {
@@ -225,7 +227,7 @@ header ul li a:hover {
 
 
 #landing-page {
-  background-image: url(images/bg.jpg);
+  background-image: url(images/pexels-pixabay-247599.jpg);
   width: 100vw; /* Use viewport width for full width */
   height: 100vh; /* Full height of the viewport */
   display: flex;
@@ -236,7 +238,7 @@ header ul li a:hover {
   background-size: cover; /* Ensure the image covers the entire area */
   text-decoration: none;
   text-align: center;
-  font-family: var(--header-font);
+  font-family: var(--text-font);
   overflow: hidden; /* Prevents any overflow if necessary */
   margin: 0; /* Ensures no default margins affect the layout */
 }
@@ -248,21 +250,24 @@ header ul li a:hover {
 }
 
 #landing-header, #landing-text {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #landing-text {
-  font-size: 35px;
-  line-height: 52.5px;
+  font-size: 30px;
+  line-height: 45px;
   max-width: 800px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
 }
 
 #landing-header {
-  font-size: 50px;
-  line-height: 75px;
+  font-size: 60px;
+  line-height: 90px;
   max-width: 100%;
+  font-family: var(--header-font);
 }
 
 #landing__button {
@@ -276,6 +281,7 @@ header ul li a:hover {
   width: 200px;
   margin-top: 0;
   font-size: 20px;
+  font-family: var(--text-font);
 }
 
 #landing__button:hover {
@@ -430,7 +436,7 @@ header ul li a:hover {
   background: rgb(60, 60, 60); /* Background color */
   border-radius: 8px; /* Rounded corners */
   padding: 50px; /* Padding inside the text block */
-  line-height: 30px; /* Line height for better readability */
+  line-height: 40px; /* Line height for better readability */
   margin-top: 16px; /* Margin for spacing above the text block */
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
@@ -458,17 +464,17 @@ footer{
   border-radius: 50%;
 }
 .socialIcons a i{
-  font-size: 2em;
+  font-size: 3em;
   color: black;
   opacity: 0,9;
 }
 /* Hover affect on social media icon */
 .socialIcons a:hover{
-  background-color: #111;
+  background-color: #0077B5;
   transition: 0.5s;
 }
 .socialIcons a:hover i{
-  color: white;
+  color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 .footerNav{
@@ -512,6 +518,7 @@ footer{
   padding-top: 50px;
   font-size: 42px;
   color: white;
+  font-family: var(--header-font);
 }
 
 .title h1::after {
@@ -560,6 +567,7 @@ footer{
   font-size: 28px;
   color: #252525;
   margin-bottom: 20px;
+  font-family: var(--text-font);
 }
 
 #card p {
