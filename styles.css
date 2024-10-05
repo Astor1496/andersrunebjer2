@@ -1,10 +1,118 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
+/* Global Styles */
+@media (max-width: 940px) {
+  body {
+    font-size: 12px;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 10px 5px;
+    max-height: 60px;
+  }
+
+  header #header-logo {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  header ul {
+    left: -15vw;
+  }
+
+  header ul li {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  /* Landing Page */
+  #landing__content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #landing-text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 80%;
+    margin: 5px 0;
+  }
+
+  #landing-header {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  #landing__button {
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+  }
+
+  /* Contact Us */
+  #contact-us {
+    padding: 20px;
+  }
+
+  #contact-us img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  #contact__header {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  #contact__text, #contact__info {
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* About Us */
+  #about__header {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  #about-us__text {
+    font-size: 14px;
+    padding: 20px;
+    line-height: 22px;
+  }
+
+  /* Services Section */
+  .services {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  /* Footer */
+  .footerNav ul li a {
+    font-size: 1.2em;
+  }
+
+  .footerBottom p {
+    font-size: 14px;
+  }
+}
+
+
+
 :root {
   --button-background: #000000;
   --text-font: Poppins;
-  --header-font :Times New Roman;
+  --header-font: Poppins;
 }
 
 
@@ -95,33 +203,6 @@ header ul li a:hover {
   transition: 0.6s;
 }
 
-@media(max-width:800px) {
-
-  body {
-    overflow-x: hidden;
-  }
-
-  header #header-logo {
-    font-size: 5px;
-    margin-left: 10px;
-    max-width: fit-content;
-  }
-  header ul li {
-    font-size: 5px;
-    display: flex;
-  }
-
-  header ul {
-    position: relative;
-    right: 0;
-    left: -15vw;
-  }
-
-  header {
-    padding: 10px 5px;
-    max-height: 10px;
-  }
-}
 
 
 
@@ -184,7 +265,7 @@ header ul li a:hover {
   color: #000;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 940px) {
   #landing__content {
     display: flex; /* Added to enable centering */
     flex-direction: column; /* Stacks the elements vertically */
@@ -218,60 +299,76 @@ header ul li a:hover {
 
 
 /* Contact us */
-
 #contact-us {
   color: white;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering content horizontally */
+  justify-content: center; /* Centering content vertically */
+  text-align: center; /* Center content vertically */
+}
+
+#contact-content {
+  background: rgb(57, 57, 57);
+  padding: 50px;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+
+#contact-content:hover {
+  transform: scale(1.2);
 }
 
 #contact-us img {
   border-radius: 50%;
   overflow: hidden;
-  width: 250px;
-  position: relative;
-  top: 100px;
-  left: 420px;
+  width: 250px; /* Original width */
+  margin-bottom: 30px; /* Added margin for spacing */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 #contact__header {
-  font-size: 50px;
-  position: relative;
-  top: 50px;
+  font-size: 50px; /* Original font size */
   text-align: center;
   font-family: var(--header-font);
+  margin-bottom: 20px; /* Increased margin for spacing */
 }
 
 #contact__text {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 20px; /* Original font size */
+  margin-top: 20px; /* Increased margin for spacing */
   text-align: center;
-  position: absolute;
-  max-width: 800px;
-  left: 150px;
-  top: 1750px;
+  max-width: 800px; /* Original max width */
   background: rgb(60, 60, 60);
   border-radius: 10px;
-  padding: 50px;
+  padding: 50px; /* This will be adjusted in the media query */
+  margin-bottom: 30px; /* Added margin for spacing */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 #contact__info {
-  position: absolute;
-  font-size: 20px;
-  left: 2000px;
+  font-size: 20px; /* Original font size */
   border-radius: 1vh;
   background: rgb(60, 60, 60);
-  padding: 5vh;
+  padding: 5vh; /* This will be adjusted in the media query */
+  margin-bottom: 30px; /* Added margin for spacing */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-#linkto-maps{
-  max-width: 133px;
-  font-size: 20px;
+#linkto-maps {
+  max-width: 133px; /* Original max width */
+  font-size: 20px; /* Original font size */
   transition: color 0.6s ease-in-out;
-  margin-top: 10px;
+  margin-top: 10px; /* Increased top margin for spacing */
   color: aqua;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#linkto-maps:hover{
+#linkto-maps:hover {
   color: rgb(0, 42, 255);
 }
 
@@ -279,37 +376,53 @@ header ul li a:hover {
 
 /* About Us Page */
 
-#about-us{
-  height: 100vh;
-  text-align: center;
-
+#about-us {
+  height: 100vh; /* Allow height to adjust based on content */
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  text-align: center; /* Center text alignment */
+  padding: 50px; /* Add padding for breathing space */
 }
 
+#about-content {
+  background: rgb(57, 57, 57);
+  padding: 50px;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+
+#about-content:hover{
+  transform: scale(1.2);
+}
+
+
 #about__header {
-  font-size: 6vh;
-  position: relative;
-  top: 7vh;
-  text-align: center;
-  font-weight: 700;
-  line-height: 7vh;
-  font-family: var(--header-font);
+  font-size: 60px; /* Fixed font size */
+  font-weight: 700; /* Bold font weight */
+  line-height: 85px; /* Line height for spacing */
+  font-family: var(--header-font); /* Custom font */
+  margin-bottom: 16px; /* Margin for spacing below the header */
 }
 
 #about-us__text {
-  font-size: 2vh;
-  text-align: center;
-  max-width: 40vw;
-  left: 7vw;
-  background: rgb(60, 60, 60);
-  border-radius: 1vh;
-  padding: 5vh;
-  margin: auto;
-  margin-top: 15vh;
-  line-height: 3vh;
+  font-size: 25px; /* Fixed font size */
+  max-width: 800px; /* Increased max width for smaller screens */
+  background: rgb(60, 60, 60); /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 50px; /* Padding inside the text block */
+  line-height: 30px; /* Line height for better readability */
+  margin-top: 16px; /* Margin for spacing above the text block */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 footer{
   background-color: #111;
+  width: 100vw;
 }
 .footerContainer{
   width: 100%;
@@ -376,3 +489,75 @@ footer{
   margin: 0px 5px;
 }
 
+.title h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 42px;
+  color: white;
+}
+
+.title h1::after {
+  content: "";
+  height: 4px;
+  width: 230px;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+.section {
+  color: white;
+  height: 100vh;
+}
+
+.services {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
+
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 20px;
+  padding: 20px 20px;
+  background-color: #4a4a4a;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.card .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 28px;
+  color: #252525;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #d6d6d6;
+}
+
+.card:hover{
+  transform: scale(1.2);
+  box-shadow: -1px 0px 66px 8px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 0px 66px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 66px 8px rgba(0,0,0,0.75);
+  z-index: 998;
+}
+
+@keyframes bigger {
+}
