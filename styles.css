@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth scroll;
+  background: #131316;
 }
 
 .fadein {
@@ -51,10 +52,10 @@ p {
 
 body {
   font-family: var(--text-font);
-  background: #131316;
   height: 100vh;
   overflow-x: hidden;
   letter-spacing: 1px;
+  position: relative;
 }
 
 header {
@@ -189,43 +190,12 @@ header ul li a:hover {
   color: #000;
 }
 
-@media(max-width: 940px) {
-  #landing__content {
-    display: flex; /* Added to enable centering */
-    flex-direction: column; /* Stacks the elements vertically */
-    align-items: center; /* Centers the items */
-    margin: 0; /* Resets margin */
-  }
-
-  #landing-page {
-    justify-content: center; /* Centers the content horizontally */
-  }
-  
-  #landing-text {
-    font-size: 10px; /* Increased font size for better visibility */
-    line-height: 15px; /* Adjusted line height */
-    max-width: 60%; /* Ensures better fit on smaller screens */
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  #landing-header {
-    font-size: 20px; /* Adjusted header font size */
-    line-height: 1.2; /* Adjusted line height for readability */
-  }
-  
-  #landing__button {
-    height: 30px;
-    width: 70px; /* Adjust button width to fit smaller screens */
-    font-size: 15px; /* Increased font size for better visibility */
-  }
-}
 
 
 /* Contact us */
 #contact-us {
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centering content horizontally */
@@ -301,7 +271,7 @@ header ul li a:hover {
 /* About Us Page */
 
 #about-us {
-  height: 100vh; /* Allow height to adjust based on content */
+  min-height: 100vh auto; /* Allow height to adjust based on content */
   display: flex; /* Enable flexbox layout */
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center children horizontally */
@@ -343,12 +313,33 @@ header ul li a:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
+#aboutBtn {
+  border: none;
+  background: var(--button-background);
+  color: white;
+  font-family: 'DM Sans';
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+#aboutBtn:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
 
 
 
 footer{
   background-color: #111;
   width: 100vw;
+  position: relative;
+  top: 30%;
+  margin: 0;
+  bottom: 0;
 }
 .footerContainer{
   width: 100%;
@@ -437,8 +428,8 @@ footer{
 
 .section {
   color: white;
-  height: 100vh;
-  margin-top: ;
+  height: auto;
+  margin-top: 0;
 }
 
 .services {
@@ -451,29 +442,7 @@ footer{
 
 }
 
-@media (max-width:900px) {
-    .services {
-      flex-direction: column;
-      margin: 20px auto;
-    }
-  
-    .card {
-      width: 100%;
-      margin: 20px 0;
-      height: 200px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-    /* Footer */
-    .footerNav ul li a {
-      font-size: 1.2em;
-    }
-  
-    .footerBottom p {
-      font-size: 14px;
-    }
-}
+
 
 #card {
   width: 100%;
@@ -486,7 +455,7 @@ footer{
   background-color: #4a4a4a;
   border-radius: 10px;
   transition: 0.6s;
-  height: 400px;
+  min-height: 400px auto;
 }
 
 #card .icon {
@@ -514,4 +483,232 @@ footer{
   -webkit-box-shadow: -1px 0px 66px 8px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 0px 66px 8px rgba(0,0,0,0.75);
   z-index: 998;
+}
+
+@media (max-width:1024px) {
+  .services {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 20px 0;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Footer */
+  .footerNav ul li a {
+    font-size: 1.2em;
+  }
+
+  .footerBottom p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 2500px) {
+  #landing__content {
+    display: flex; /* Added to enable centering */
+    flex-direction: column; /* Stacks the elements vertically */
+    align-items: center; /* Centers the items */
+    margin: 0; /* Resets margin */
+  }
+
+  #landing-page {
+    justify-content: center; /* Centers the content horizontally */
+  }
+  
+  #landing-text {
+    font-size: 3vw; /* Increased font size for better visibility */
+    line-height: 4.5vw; /* Adjusted line height */
+    max-width: 60%; /* Ensures better fit on smaller screens */
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  
+  #landing-header {
+    font-size: 6vw; /* Adjusted header font size */
+    line-height: 1.2; /* Adjusted line height for readability */
+  }
+  
+  #landing__button {
+    height: 30px;
+    width: 70px; /* Adjust button width to fit smaller screens */
+    font-size: 15px; /* Increased font size for better visibility */
+  }
+}
+
+/*Ipad and iphone*/
+
+@media(max-width: 1024px) {
+  /*Navbar / header*/
+  header {
+    padding: 1vw 0.5vw;
+
+  }
+
+  header #header-logo {
+    font-size: 3vw;
+    
+  }
+
+  header ul {
+    font-size: 2vw;
+  }
+
+  header.sticky {
+    padding: 1vw 0.5vw;
+    background: #fff;
+  }
+
+
+  /*Landing page*/
+  #landing__content {
+    display: flex; /* Added to enable centering */
+    flex-direction: column; /* Stacks the elements vertically */
+    align-items: center; /* Centers the items */
+    margin: 0; /* Resets margin */
+  }
+
+  #landing-page {
+    justify-content: center; /* Centers the content horizontally */
+  }
+  
+  #landing-text {
+    font-size: 3vw; /* Increased font size for better visibility */
+    line-height: 4.5vw; /* Adjusted line height */
+    max-width: 60%; /* Ensures better fit on smaller screens */
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: white;
+  }
+  
+  #landing-header {
+    font-size: 6vw; /* Adjusted header font size */
+    line-height: 1.2; /* Adjusted line height for readability */
+  }
+  
+  #landing__button {
+    height: 5vw;
+    width: 10vw; /* Adjust button width to fit smaller screens */
+    font-size: 1.5vw; /* Increased font size for better visibility */
+    border-radius: 1vw;
+  }
+
+  /*Contact us section*/
+  #contact-content {
+    padding: 20px;
+    margin: 2vh;
+  }
+  #contact-us img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  #contact__header {
+    font-size: 6vw;
+  }
+  #contact__text {
+    font-size: 3vw;
+  }
+
+  #contact__info {
+    font-size: 3vw;
+  }
+
+  #linkto-maps{
+    font-size: 3vw;
+  }
+
+  /*About us*/
+  #about-us {
+    padding: 15px;
+  }
+
+  #about-content{
+    padding: 10px;
+
+  }
+
+  #about__header {
+    font-size: 6vw;
+  }
+
+  #about-us__text {
+    font-size: 3vw;
+    line-height: 5vw;
+    margin-bottom: 3vh;
+  }
+
+  #aboutBtn {
+    width: 15vw;
+    height: 5vh;
+    border-radius: 1vh;
+    margin-top: 1vh;
+  }
+
+  /*Services*/
+  .services {
+    margin: 30px auto;
+  }
+
+  .title h1 {
+    font-size: 5vh;
+    padding-top: 2vh;
+  }
+
+
+
+  #card {
+    min-height: 20vh auto;
+    margin: 2vh;
+  }
+  #card .icon {
+    font-size: 3vh;
+  }
+
+  #card h2 {
+    font-size: 2.5vh;
+    margin-bottom: 10px;
+  }
+  #card p {
+    font-size: 3vw;
+  }
+
+  /*Footer*/
+
+  .footerContainer {
+    padding: 2.3vw 1vw 1vw;
+  }
+
+  .socialIcons a i{
+    font-size: 4vw;
+  }
+
+  .socialIcons a{
+    padding: 1vw;
+    border-radius: 15%;
+  }
+
+  .footerNav {
+    margin: 1vw;
+  }
+  .footerNav ul li a {
+    font-size: 3vw;
+  }
+
+  .footerBottom {
+    padding: 1vw;
+  }
+
+  .footerBottom p{
+    font-size: 2.5vw;
+  }
+  .designer{
+    font-size: 3vw;
+    display: block;
+  }
 }
