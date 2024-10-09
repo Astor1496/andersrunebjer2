@@ -141,3 +141,122 @@
   })
 </script>
 </html>
+
+<!--
+README: Anpassa Din Hemsida
+
+Denna guide hjälper dig att ändra webikonen (favicon) samt uppdatera all text på webbplatsen utan att du behöver förstå HTML. Följ instruktionerna nedan för att göra dessa ändringar.
+
+INNEHÅLL:
+1. Byta Webikon (Favicon)
+2. Uppdatera Textinnehåll
+   - Ändra huvudtitel och företagets namn
+   - Ändra sidans rubriker och beskrivning
+   - Ändra kontaktinformation
+3. Vanliga frågor
+
+---------------------------------------------------------------------
+
+1. Byta Webikon (Favicon)
+
+Webikonen (även kallad "favicon") är den lilla bilden som visas i webbläsarens flik bredvid sidans titel. Så här byter du ut den:
+
+1. Välj en bild att använda som webikon. Den bör vara i formatet .jpg och gärna 32x32 pixlar för bästa resultat.
+   
+2. Döp om bilden till no-image.jpg.
+
+3. Ladda upp bilden till mappen "images".
+   - Gå till mappen "images" i projektets filer och ersätt den befintliga no-image.jpg-filen med din nya bild.
+
+När du laddat upp bilden, kommer den nya ikonen automatiskt att visas på din hemsida när någon besöker den.
+
+---------------------------------------------------------------------
+
+2. Uppdatera Textinnehåll
+
+Här kan du steg för steg ändra texten på hemsidan. Du behöver inte kunna HTML, följ bara guiden nedan för att göra de ändringar du vill.
+
+---------------------------------------------------------------------
+
+2.1 Ändra huvudtitel och företagets namn
+
+1. Öppna "index.html":  
+   - Hitta och högerklicka på filen "index.html". Välj "Öppna med" och välj en enkel textredigerare som Anteckningar (Windows) eller Textredigeraren (Mac).
+
+2. Ändra sidans titel i webbläsaren:  
+   I början av filen hittar du denna rad:
+   <title>Advokat Anders Runebjer AB</title>
+   - Ändra texten mellan <title> och </title> till det namn du vill ska visas i webbläsarens flik. Exempel:
+   <title>Mitt Företag AB</title>
+
+3. Ändra företagets namn i sidans huvudrubrik:  
+   Leta reda på denna rad:
+   <a href="index.html" id="header-logo">Advokat Anders Runebjer AB</a>
+   - Ändra texten mellan taggarna > och < till det nya företagsnamnet. Exempel:
+   <a href="index.html" id="header-logo">Mitt Företag AB</a>
+
+---------------------------------------------------------------------
+
+2.2 Ändra sidans rubriker och beskrivning
+
+1. Ändra huvudrubriken och presentationstexten:
+   Hitta dessa rader för att ändra huvudrubriken och presentationen på första sidan:
+   <h1 class="fadein" id="landing-header">Advokat Anders Runebjer AB</h1>
+   <p class="fadein" id="landing-text">Vi erbjuder kvalité och kompetens utifrån omfattande erfarenhet...</p>
+
+   - Ändra texten mellan <h1> och </h1> för att byta ut huvudrubriken.
+   Exempel:
+   <h1 class="fadein" id="landing-header">Mitt Företag AB</h1>
+
+   - Ändra texten mellan <p> och </p> för att byta ut presentationstexten.
+
+2. Ändra om oss-texten:
+   Leta reda på denna del för att ändra "Om oss"-sektionen:
+   <p class="fadein">Advokat Anders Runebjer AB erbjuder juridisk rådgivning...</p>
+
+   - Ändra texten inom <p>-taggarna för att skriva din egen beskrivning.
+
+3. Ändra tjänstebeskrivningar:
+   Tjänstebeskrivningarna finns här:
+   <h2>Planering</h2>
+   <p>Hos Advokat Anders Runebjer AB erbjuder vi skräddarsydd rådgivning...</p>
+
+   - Ändra texten inom <h2>-taggarna för att ändra tjänstens namn.
+   - Ändra texten inom <p>-taggarna för att ändra beskrivningen av tjänsten.
+
+---------------------------------------------------------------------
+
+2.3 Ändra kontaktinformation
+
+För att ändra telefonnummer, adress och e-post på kontaktsidan, hitta denna sektion i filen:
+
+<div class="fadein" id="phone-number">Telefon: +46708661350</div>
+<div class="fadein" id="address">Adress: Gårdserud 60, 686 91 Sunne</div>
+<div class="fadein" id="email">E-post: advokat@runebjer.se</div>
+
+- Ändra texten efter "Telefon:", "Adress:", och "E-post:" till din egen kontaktinformation.  
+  Exempel:
+  <div class="fadein" id="phone-number">Telefon: +46123456789</div>
+  <div class="fadein" id="address">Adress: Mitt Företag, 123 45 Staden</div>
+  <div class="fadein" id="email">E-post: kontakt@mittforetag.se</div>
+
+---------------------------------------------------------------------
+
+3. Vanliga Frågor
+
+3.1 Hur sparar jag ändringar?
+
+När du har gjort dina ändringar, klicka på "Spara" i din textredigerare. Uppdatera webbläsaren för att se ändringarna.
+
+3.2 Vad händer om jag gör ett misstag?
+
+Om du råkar göra ett misstag, kan du alltid använda "Ångra" funktionen i din textredigerare (ofta med Ctrl + Z på Windows eller Cmd + Z på Mac) eller ladda upp den ursprungliga filen igen.
+
+3.3 Vilka textredigerare kan jag använda?
+
+- På Windows kan du använda Anteckningar.
+- På Mac kan du använda Textredigeraren.
+- Om du vill ha ett mer avancerat verktyg, kan du ladda ner Sublime Text eller Visual Studio Code (gratis).
+
+Lycka till med att anpassa din hemsida! Om du stöter på problem, tveka inte att kontakta oss för support.
+-->
