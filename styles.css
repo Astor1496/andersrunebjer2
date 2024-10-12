@@ -538,7 +538,7 @@ footer{
     height: 30px;
     width: 70px; /* Adjust button width to fit smaller screens */
     font-size: 15px; /* Increased font size for better visibility */
-    padding: 45px;
+    padding: 1vw;
     display: flex;
     text-align: center;
     align-items: center;
