@@ -509,7 +509,7 @@ footer{
   }
 }
 
-@media(max-width: 2500px) {
+@media(max-width: 1500px) {
   #landing__content {
     display: flex; /* Added to enable centering */
     flex-direction: column; /* Stacks the elements vertically */
@@ -538,10 +538,16 @@ footer{
     height: 30px;
     width: 70px; /* Adjust button width to fit smaller screens */
     font-size: 15px; /* Increased font size for better visibility */
+    padding: 45px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
   }
 }
 
 /*Ipad and iphone*/
+
 
 @media(max-width: 1024px) {
   /*Navbar / header*/
