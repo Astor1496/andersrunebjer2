@@ -515,6 +515,7 @@ footer{
     flex-direction: column; /* Stacks the elements vertically */
     align-items: center; /* Centers the items */
     margin: 0; /* Resets margin */
+    text-align: center;
   }
 
   #landing-page {
@@ -522,8 +523,8 @@ footer{
   }
   
   #landing-text {
-    font-size: 3vw; /* Increased font size for better visibility */
-    line-height: 4.5vw; /* Adjusted line height */
+    font-size: 2vw; /* Increased font size for better visibility */
+    line-height: 1.5; /* Adjusted line height */
     max-width: 60%; /* Ensures better fit on smaller screens */
     margin-top: 1vw;
     margin-bottom: 1vw;
